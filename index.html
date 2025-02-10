@@ -3,7 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Magnifico</title>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-blue: #2563eb;
+        --color-graylight: #94a3b8;
+        --color-purple: #581c87;
+        --color-darkblue-700: #0f172a;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="font-mono p-5">
+    <!-- Head -->
+    <header class="w-full flex justify-between">
+      <h1 class="text-darkblue-700 text-2xl cursor-pointer">Magnifico</h1>
+      <nav></nav>
+      <img src="./assets/images/burgermenu.svg" alt="" class="cursor-pointer" />
+    </header>
+    <!-- hero section -->
+    <section>
+      <pre class="text-3xl pt-10 text-darkblue-700">
+Teach students
+worldwide</pre
+      >
+      <p class="w-full text-darkblue-700 pt-10 text-sm text-justify">
+        Amet nunc diam orci duis ut sit diam arcu,nec.Eleifend proin massa
+        tincidunt viverralectuspulvinar .Nunc ipsum est pellentesque turpis
+        ultricies.
+      </p>
+      <div class="w-full flex gap-8 pt-10">
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="Enter work email"
+          class="flex-1 w-2/4 h-12 text-center text-sm rounded border-1 border-gray-200"
+        />
+        <button
+          class="flex items-center justify-center flex-1 bg-blue h-12 text-center text-white text-sm rounded"
+        >
+          <h1 class="">Sign Up Free</h1>
+          <img
+            src="./assets/images/white-arrow-right.svg"
+            alt=""
+            class="h-5 w-5"
+          />
+        </button>
+      </div>
+    </section>
+  </body>
 </html>
