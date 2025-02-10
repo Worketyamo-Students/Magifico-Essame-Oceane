@@ -13,29 +13,33 @@
     <title>Magnifico</title>
     <style type="text/tailwindcss">
       @theme {
+        --roboto: "Roboto";
         --color-blue: #2563eb;
         --color-graylight: #94a3b8;
         --color-purple: #581c87;
         --color-darkblue-700: #0f172a;
         --color-grayrish: #f1f5f9;
-        --color-drakgray: #94a3b8;
+        --color-darkgray: #94a3b8;
       }
     </style>
   </head>
-  <body class="font-mono p-5">
+  <body class="p-5 font-roboto">
     <!-- Head -->
     <header class="w-full flex justify-between">
-      <h1 class="text-darkblue-700 text-2xl cursor-pointer">Magnifico</h1>
+      <h1 class="text-darkblue-700 text-2xl cursor-pointer font-bold">
+        Magnifico
+      </h1>
       <nav></nav>
       <img src="./assets/images/burgermenu.svg" alt="" class="cursor-pointer" />
     </header>
     <!-- hero section -->
     <section>
-      <pre class="text-3xl pt-10 text-darkblue-700">
-Teach students
-worldwide</pre
+      <h1 class="text-4xl pt-10 text-darkblue-700 font-bold">
+        Teach students worldwide
+      </h1>
+      <p
+        class="w-full text-darkblue-700 pt-10 text-m text-justify font-normal text-wrap"
       >
-      <p class="w-full text-darkblue-700 pt-10 text-sm text-justify">
         Amet nunc diam orci duis ut sit diam arcu,nec.Eleifend proin massa
         tincidunt viverralectuspulvinar .Nunc ipsum est pellentesque turpis
         ultricies.
@@ -51,7 +55,7 @@ worldwide</pre
         <button
           class="flex items-center justify-center hover:bg-blue-400 flex-1 bg-blue h-12 text-center text-sm rounded"
         >
-          <h1 class="text-white">Sign Up Free</h1>
+          <h1 class="text-white font-medium">Sign Up Free</h1>
           <img
             src="./assets/images/white-arrow-right.svg"
             alt=""
@@ -63,19 +67,19 @@ worldwide</pre
       <div class="w-full bg-grayrish mt-10 grid grid-cols-2 gap-3 p-5">
         <div class="flex items-center gap-3">
           <img src="./assets/images/shell.svg" alt="" class="w-10 h-10" />
-          <h1 class="text-sm">SHELLS</h1>
+          <h1 class="text-m text-darkgray font-bold">SHELLS</h1>
         </div>
         <div class="flex items-center gap-3">
           <img src="./assets/images/smart.svg" alt="" class="w-10 h-10" />
-          <h1 class="text-sm">SmartFinder</h1>
+          <h1 class="text-m text-darkgray font-bold">SmartFinder</h1>
         </div>
         <div class="flex items-center gap-3">
           <img src="./assets/images/n.svg" alt="" class="w-10 h-10" />
-          <h1 class="text-sm">ArtVenue</h1>
+          <h1 class="text-m text-darkgray font-bold">ArtVenue</h1>
         </div>
         <div class="flex items-center gap-3">
           <img src="./assets/images/wave.svg" alt="" class="w-10 h-10" />
-          <h1 class="text-sm">WAVES</h1>
+          <h1 class="text-m text-darkgray font-bold">WAVES</h1>
         </div>
       </div>
       <div class="w-full pt-10">
@@ -84,6 +88,53 @@ worldwide</pre
           alt=""
           class="w-full transition-all duration-300 hover:scale-100 scale-98"
         />
+      </div>
+      <!-- Enjoy your time working -->
+      <div class="pt-20">
+        <h1 class="text-4xl text-darkblue-700 font-bold">
+          Enjoy your time working
+        </h1>
+        <p class="mt-10 font-normal text-m text-justify text-wrap">
+          Etiam condimentum duis molestie malesuada volutpat pellentesque sed.
+          Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis
+          massa tellus imperdiet aenean nulla id.
+        </p>
+        <div class="mt-10 flex justify-start gap-3">
+          <h1 class="text-sm text-blue-500">See how it helped others</h1>
+          <img src="./assets/images/arrow-right.svg" alt="" class="h-5 w-5" />
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-6 pt-10">
+        <div class="relative">
+          <img src="./assets/images/Icons.svg" alt="" class="relative" />
+          <img
+            src="./assets/images/1.svg"
+            alt=""
+            class="absolute -translate-y-15"
+          />
+        </div>
+        <div class="">
+          <img src="./assets/images/2.svg" alt="" class="transform" />
+        </div>
+        <div class="">
+          <img
+            src="./assets/images/3.svg"
+            alt=""
+            class="transform translate-y-11"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="pt-30">
+        <h1 class="text-4xl text-darkblue-700 font-bold">
+          Enjoy your time working
+        </h1>
+        <p class="mt-10 font-normal text-m text-justify text-wrap">
+          Etiam condimentum duis molestie malesuada volutpat pellentesque sed.
+          Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis
+          massa tellus imperdiet aenean nulla id.
+        </p>
+        <img src="./assets/images/Right.svg" alt="" class="mt-5" />
       </div>
     </section>
   </body>
