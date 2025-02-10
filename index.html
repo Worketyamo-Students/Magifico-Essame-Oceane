@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">        
+
     <title>Magnifico</title>
+	<style type="text/tailwindcss">   
+		@theme {     
+			--inter: "inter"
+			--IBM: "IBM Plex Sans  Devanagari"
+			 }   
+	  </style>
   </head>
   <body>
-    <section class="flex flex-col gap-6" >
-		<section class="flex flex-col p-6">
+    <section>
+		<section class="flex flex-col p-6 ">
 			<div class="justify-start items-start gap-10 flex flex-col ">
-			<h1 class="font-bold text-4xl text-left">Enjoy your time working</h1>
-			<p class="text-left justify-start"> Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
+				<h1 class="font-bold text-4xl text-left">Enjoy your time working</h1>
+				<p class="text-left justify-start"> Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
 			</div>
 			<div class="items-center justify-center flex py-8">
 				<img src="./assets/images/Right.png" alt="oceane">
