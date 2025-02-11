@@ -4,54 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">        
-
-    <title>Magnifico</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>    
+	<title>Magnifico</title>
+	<link rel="stylesheet" href="./index.css">
 	<style type="text/tailwindcss">   
 		@theme {     
-			--inter: "inter"
-			--IBM: "IBM Plex Sans  Devanagari"
+			--roboto: "Roboto";			
 			 }   
 	  </style>
   </head>
-  <body>
-    <section>
-		<section class="flex flex-col p-6 ">
-			<div class="justify-start items-start gap-10 flex flex-col ">
-				<h1 class="font-bold text-4xl text-left">Enjoy your time working</h1>
+  <body class=" font-roboto overflow-x-hidden">
+	  <!--section oceane -->
+    <section class= "lg:gap-10 lg:flex lg:flex-col lg:px-8">
+		<section class=" p-6 flex flex-col  lg:flex lg:flex-row lg:p-14 lg:items-center lg:gap-10">
+			<div class="justify-start items-start gap-10 flex flex-col lg:flex-1">
+				<h1 class="font-bold text-4xl text-left block lg:hidden">Enjoy your time working</h1>
+				<h1 class="font-bold text-4xl text-left hidden lg:block">Get all the tools your team needs</h1>
 				<p class="text-left justify-start"> Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
+				<a href="" class="flex gap-6 hidden lg:block lg:flex lg:gap-6 lg:text-blue-500">Improve workflow
+					<svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg>
+				</a>
+
 			</div>
-			<div class="items-center justify-center flex py-8">
+			<div class="items-center justify-center flex py-8 lg:flex-1">
 				<img src="./assets/images/Right.png" alt="oceane">
 			</div>
 		</section>
-		<section class="bg-purple-600 bg-opacity-75 bg-[url(/assets/images/image.jpeg)] p-6 text-white"  >
-			<div class="gap-6 flex flex-col py-6"> 
-			<h1 class="font-bold  text-left text-3xl">Problems come and get solved with ease</h1>
-			<p class="text-left justify-start">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
-			<a href="" class="flex gap-6">Improve workflow
-				<svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg>
-			</a>
+		<section class="bg-purple bg-opacity-75  p-6 text-purple  lg:mx-7 lg:rounded-xl flex flex-1">
+			<div class="lg:flex flex-1">
+
+			</div>
+			<div class="gap-6 flex flex-col py-6 lg:flex-1 lg:pr-6 lg:py-14 malo"> 
+				<h1 class="font-bold  text-left text-3xl">Problems come and get solved with ease</h1>
+				<p class="text-left justify-start">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
+				<a href="" class="flex gap-6">Improve workflow
+					<svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg>
+				</a>
 			</div>
 		</section>
-		<section class="p-6 flex flex-col gap-6">
-			<h1 class="font-bold  text-left text-3xl py-6">Improve workflow</h1>
-			<div class="flex  justify-center items-center text-center">
-			<div class="border-solid border-light-blue-500 border  w-24 h-8 ">Research</div>
-			<div class="border-solid border-light-blue-500 border  w-24 h-8 ">Plan</div>
-			<div class="border-solid border-light-blue-500 border  w-24 h-8 ">Design</div>
+		<section class="lg:flex flex-1">
+			<div class="p-6 flex flex-col gap-6 lg:mr-20 lg:flex-1">
+				<h1 class="font-bold  text-left text-3xl py-6">Improve workflow</h1>
+				<div class="flex  justify-center items-center text-center">
+				<div class="border-solid border-light-blue-500 border  w-24 h-8 ">Research</div>
+				<div class="border-solid border-light-blue-500 border  w-24 h-8 ">Plan</div>
+				<div class="border-solid border-light-blue-500 border  w-24 h-8 ">Design</div>
+				</div>
+				<p>Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
+				<a href="" class="flex gap-6 text-blue-500">Check the tools
+					<svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg>
+				</a>
 			</div>
-			<p>Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
-			<a href="" class="flex gap-6 text-blue-500">Check the tools
-				<svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg>
-			</a>
+			<div class="flex justify-center items-center p-6  w-96 flex-col lg:flex-1">
+				<img src="./assets/images/Desktop.png" alt="" class="w-full text-center">
+			</div>
 		</section>
-		<section class="flex justify-center items-center p-6">
-			<img src="./assets/images/Desktop.png" alt="" class="w-full">
-		</section>
-		<section class="flex justify-center items-center p-6 flex-col gap-10  text-white bg-gradient-to-br from-blue-900  to-pink-500" >
+		
+		<section class="flex justify-center items-center m-0 p-6 flex-col gap-10  text-white bg-gradient-to-br from-blue-900  to-pink-500 lg:mx-8 lg:rounded-xl text-center" >
 				<h1 class="font-bold  text-left text-5xl text-center">Join the community today</h1>
 				<p>Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
 				<button type="submit" class="bg-blue-600 text-white w-44 h-14 flex gap-6 justify-center items-center rounded-lg">Sign Up Free
@@ -59,17 +70,19 @@
 
 				</button>
 		</section>
-		<section class="flex flex-col gap-6 p-6 py-6">
-				<h4 class="font-bold  text-left text-4xl">magnifico</h4>
-				<span class="text-gray-600">@ 2023. All rights reserved.</span>
-				<div class="text-gray-600">
-				<ul class="flex gap-6 justify-center items-center">
-					<li>Terms</li>
-					<li>Privacy</li>
-					<li>Support</li>
-					<li>About </li>
-					<li>Contact</li>
-				</ul>
+		<section class="flex flex-col gap-6 p-6 py-6 lg:flex lg:flex-row lg:justify-between lg:items-center ">
+				<div class=" flex flex-col gap-3 lg:flex lg:gap-6  lg:items-center">
+					<h4 class="font-bold  text-left text-3xl">magnifico</h4>
+					<span class="text-gray-600">@ 2023. All rights reserved.</span>
+				</div>
+				<div class="text-gray-600 ">
+					<ul class="flex gap-6 justify-center items-center">
+						<li>Terms</li>
+						<li>Privacy</li>
+						<li>Support</li>
+						<li>About </li>
+						<li>Contact</li>
+					</ul>
 				</div>
 		</section>
     </section>
